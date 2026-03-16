@@ -1,0 +1,173 @@
+/* Global */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+min-height:100vh;
+color:white;
+}
+
+/* Container */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:50px 20px;
+}
+
+/* Title */
+
+.title{
+font-size:36px;
+font-weight:700;
+margin-bottom:30px;
+letter-spacing:1px;
+}
+
+/* Form */
+
+.todo-form{
+display:flex;
+gap:10px;
+margin-bottom:35px;
+}
+
+.todo-input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:10px;
+background:rgba(255,255,255,0.1);
+color:white;
+font-size:14px;
+backdrop-filter:blur(10px);
+}
+
+.todo-input::placeholder{
+color:#ccc;
+}
+
+.todo-input:focus{
+outline:none;
+background:rgba(255,255,255,0.15);
+}
+
+/* Add button */
+
+.add-btn{
+background:linear-gradient(135deg,#ff9966,#ff5e62);
+border:none;
+padding:12px 20px;
+border-radius:10px;
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:0.2s;
+}
+
+.add-btn:hover{
+transform:scale(1.05);
+}
+
+/* Todo Card */
+
+.todo-card{
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:18px;
+margin-bottom:20px;
+backdrop-filter:blur(15px);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.todo-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* Title */
+
+.todo-title{
+font-size:20px;
+font-weight:600;
+}
+
+/* Description */
+
+.todo-desc{
+margin-top:6px;
+color:#d1d1d1;
+}
+
+/* Status */
+
+.status{
+margin-top:10px;
+font-size:14px;
+color:#9bd4ff;
+}
+
+/* Button group */
+
+.button-group{
+margin-top:15px;
+display:flex;
+gap:10px;
+}
+
+/* Buttons */
+
+.btn{
+border:none;
+padding:9px 18px;
+border-radius:8px;
+cursor:pointer;
+font-weight:500;
+transition:0.2s;
+}
+
+/* Complete */
+
+.btn-complete{
+background:linear-gradient(135deg,#00c6ff,#0072ff);
+color:white;
+}
+
+.btn-complete:hover{
+transform:scale(1.08);
+}
+
+/* Delete */
+
+.btn-delete{
+background:linear-gradient(135deg,#ff416c,#ff4b2b);
+color:white;
+}
+
+.btn-delete:hover{
+transform:scale(1.08);
+}
+
+/* Logout */
+
+.logout-btn{
+margin-top:30px;
+background:linear-gradient(135deg,#232526,#414345);
+border:none;
+padding:10px 22px;
+border-radius:10px;
+color:white;
+cursor:pointer;
+transition:0.2s;
+}
+
+.logout-btn:hover{
+transform:scale(1.05);
+}
